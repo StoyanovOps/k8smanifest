@@ -6,7 +6,7 @@ pipeline {
     }
     stages {
         stage('Update GIT') {
-                script {
+                steps {
                     catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                         withCredentials([usernamePassword(credentialsId: 'github-argo', passwordVariable: 'GIT_PASSWORD', usernameVariable: 'GIT_USERNAME')]) {
                             //def encodedPassword = URLEncoder.encode("$GIT_PASSWORD",'UTF-8')
