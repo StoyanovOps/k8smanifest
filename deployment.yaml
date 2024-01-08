@@ -21,7 +21,7 @@ spec:
       - name: regcred
       containers:
       - name: argocd-app
-        image: stoyanovsavvy/savvytribe:latest
+        image: stoyanovsavvy/savvytribe:13
         ports:
         - containerPort: 3000
 ---
