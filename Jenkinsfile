@@ -1,7 +1,7 @@
 pipeline { 
     agent { 
         node {
-            label 'gradle-agent'
+            label 'docker-agent-alpine'
             }
     }
     stages {
